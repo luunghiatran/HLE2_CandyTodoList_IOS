@@ -27,6 +27,8 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoginViewController" customModule="CandyTodoList" customModuleProvider="target">
             <connections>
+                <outlet property="emailTextField" destination="smz-KZ-ulj" id="aFo-SK-22c"/>
+                <outlet property="passTextField" destination="Igf-OB-ObS" id="BkQ-64-PBy"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -126,52 +128,16 @@
                                                         <attributes>
                                                             <color key="NSColor" red="0.1704" green="0.23072999999999999" blue="0.41394999999999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                             <font key="NSFont" size="14" name="Avenir-Heavy"/>
-                                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
-                                                                <tabStops>
-                                                                    <textTab alignment="left" location="28">
-                                                                        <options/>
-                                                                    </textTab>
-                                                                    <textTab alignment="left" location="56">
-                                                                        <options/>
-                                                                    </textTab>
-                                                                    <textTab alignment="left" location="84">
-                                                                        <options/>
-                                                                    </textTab>
-                                                                    <textTab alignment="left" location="112">
-                                                                        <options/>
-                                                                    </textTab>
-                                                                    <textTab alignment="left" location="140">
-                                                                        <options/>
-                                                                    </textTab>
-                                                                    <textTab alignment="left" location="168">
-                                                                        <options/>
-                                                                    </textTab>
-                                                                    <textTab alignment="left" location="196">
-                                                                        <options/>
-                                                                    </textTab>
-                                                                    <textTab alignment="left" location="224">
-                                                                        <options/>
-                                                                    </textTab>
-                                                                    <textTab alignment="left" location="252">
-                                                                        <options/>
-                                                                    </textTab>
-                                                                    <textTab alignment="left" location="280">
-                                                                        <options/>
-                                                                    </textTab>
-                                                                    <textTab alignment="left" location="308">
-                                                                        <options/>
-                                                                    </textTab>
-                                                                    <textTab alignment="left" location="336">
-                                                                        <options/>
-                                                                    </textTab>
-                                                                </tabStops>
-                                                            </paragraphStyle>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
                                                             <integer key="NSUnderline" value="1"/>
                                                             <color key="NSUnderlineColor" red="0.1704" green="0.23072999999999999" blue="0.41394999999999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                         </attributes>
                                                     </fragment>
                                                 </attributedString>
                                             </state>
+                                            <connections>
+                                                <action selector="registerTouch:" destination="-1" eventType="touchUpInside" id="hLx-8s-Jue"/>
+                                            </connections>
                                         </button>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="USO-01-556">
                                             <rect key="frame" x="0.0" y="202" width="310" height="54"/>
@@ -190,6 +156,9 @@
                                                     <real key="value" value="8"/>
                                                 </userDefinedRuntimeAttribute>
                                             </userDefinedRuntimeAttributes>
+                                            <connections>
+                                                <action selector="loginTouch:" destination="-1" eventType="touchUpInside" id="Msf-uf-arm"/>
+                                            </connections>
                                         </button>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="w9A-m1-Axc">
                                             <rect key="frame" x="267" y="88" width="42" height="24"/>
@@ -229,15 +198,13 @@
                             </subviews>
                             <constraints>
                                 <constraint firstItem="3mG-rp-07W" firstAttribute="top" secondItem="6vG-V8-g04" secondAttribute="bottom" constant="130" id="0vH-Uu-Cto"/>
-                                <constraint firstItem="3mG-rp-07W" firstAttribute="centerX" secondItem="EKZ-fL-V02" secondAttribute="centerX" id="AYv-lY-ho9"/>
                                 <constraint firstItem="6vG-V8-g04" firstAttribute="top" secondItem="EKZ-fL-V02" secondAttribute="top" constant="35" id="Nsn-Hw-lMc"/>
-                                <constraint firstItem="6vG-V8-g04" firstAttribute="centerX" secondItem="EKZ-fL-V02" secondAttribute="centerX" id="ZrG-2i-Rhz"/>
+                                <constraint firstItem="3mG-rp-07W" firstAttribute="centerX" secondItem="EKZ-fL-V02" secondAttribute="centerX" id="n5D-Ye-dwE"/>
+                                <constraint firstItem="6vG-V8-g04" firstAttribute="centerX" secondItem="EKZ-fL-V02" secondAttribute="centerX" id="pg2-Ji-vpb"/>
                             </constraints>
                         </view>
                     </subviews>
                     <constraints>
-                        <constraint firstItem="EKZ-fL-V02" firstAttribute="centerX" secondItem="pnr-Tf-Av2" secondAttribute="centerX" id="7eD-GC-b7n"/>
-                        <constraint firstItem="EKZ-fL-V02" firstAttribute="centerY" secondItem="pnr-Tf-Av2" secondAttribute="centerY" id="9bh-eG-mwB"/>
                         <constraint firstItem="EKZ-fL-V02" firstAttribute="top" secondItem="pnr-Tf-Av2" secondAttribute="top" id="IZi-gU-iV3"/>
                         <constraint firstItem="EKZ-fL-V02" firstAttribute="leading" secondItem="pnr-Tf-Av2" secondAttribute="leading" id="Mmd-js-1J8"/>
                         <constraint firstAttribute="trailing" secondItem="EKZ-fL-V02" secondAttribute="trailing" id="cxn-j9-oVC"/>
@@ -250,7 +217,9 @@
                 <constraint firstItem="pnr-Tf-Av2" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="6Iz-iM-fRk"/>
                 <constraint firstItem="pnr-Tf-Av2" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="N9s-UQ-QnZ"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="pnr-Tf-Av2" secondAttribute="bottom" id="NeW-gG-bpC"/>
+                <constraint firstItem="EKZ-fL-V02" firstAttribute="width" secondItem="fnl-2z-Ty3" secondAttribute="width" id="OwE-da-e1e"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="pnr-Tf-Av2" secondAttribute="trailing" id="kLc-KE-wGI"/>
+                <constraint firstItem="EKZ-fL-V02" firstAttribute="height" secondItem="fnl-2z-Ty3" secondAttribute="height" priority="250" id="m4m-1g-SoM"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <point key="canvasLocation" x="47.826086956521742" y="38.839285714285715"/>

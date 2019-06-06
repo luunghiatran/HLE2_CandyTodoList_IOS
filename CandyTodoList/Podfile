@@ -1,0 +1,19 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'CandyTodoList' do
+  # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for CandyTodoList
+  pod 'SnapKit', '~> 5.0'
+  pod 'UIColor_Hex_Swift', '~> 5.1.0'
+  pod 'pop', '~> 1.0'
+  pod 'SwiftLint', '~> 0.32'
+  pod 'SwiftyUserDefaults', '~> 4.0'
+    
+  pod 'ESTabBarController-swift', '~> 2.7'
+  pod 'SideMenu', '~> 5.0'
+  pod 'EachNavigationBar', '~> 1.11'
+
+end

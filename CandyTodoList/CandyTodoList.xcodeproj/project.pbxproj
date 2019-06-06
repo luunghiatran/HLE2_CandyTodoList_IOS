@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		129A1ACE036BB5EB98E350D2 /* Pods_CandyTodoList.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7043369123FE6CCB7BD5F359 /* Pods_CandyTodoList.framework */; };
 		CA06798B229CE51700B20AD5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA06798A229CE51700B20AD5 /* AppDelegate.swift */; };
 		CA067992229CE51A00B20AD5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA067991229CE51A00B20AD5 /* Assets.xcassets */; };
 		CA067995229CE51A00B20AD5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA067993229CE51A00B20AD5 /* LaunchScreen.storyboard */; };
@@ -26,6 +27,27 @@
 		CA0679C2229CF3BD00B20AD5 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA0679C0229CF3BD00B20AD5 /* LoginViewController.swift */; };
 		CA0679C3229CF3BD00B20AD5 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CA0679C1229CF3BD00B20AD5 /* LoginViewController.xib */; };
 		CA0679C6229D1BAE00B20AD5 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA0679C5229D1BAE00B20AD5 /* Colors.xcassets */; };
+		CA0709F2229E281B007E6958 /* NavigationUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA0709F1229E281B007E6958 /* NavigationUtil.swift */; };
+		CA0709F6229E292C007E6958 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA0709F4229E292C007E6958 /* RegisterViewController.swift */; };
+		CA0709F7229E292C007E6958 /* RegisterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CA0709F5229E292C007E6958 /* RegisterViewController.xib */; };
+		CA070A07229E78D7007E6958 /* TodoListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA070A05229E78D7007E6958 /* TodoListViewController.swift */; };
+		CA070A08229E78D7007E6958 /* TodoListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CA070A06229E78D7007E6958 /* TodoListViewController.xib */; };
+		CA070A0C229E7965007E6958 /* SchedulerListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA070A0A229E7965007E6958 /* SchedulerListViewController.swift */; };
+		CA070A0D229E7965007E6958 /* SchedulerListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CA070A0B229E7965007E6958 /* SchedulerListViewController.xib */; };
+		CA070A11229E79C9007E6958 /* NotificationListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA070A0F229E79C9007E6958 /* NotificationListViewController.swift */; };
+		CA070A12229E79C9007E6958 /* NotificationListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CA070A10229E79C9007E6958 /* NotificationListViewController.xib */; };
+		CA070A16229E7A02007E6958 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA070A14229E7A02007E6958 /* ProfileViewController.swift */; };
+		CA070A17229E7A02007E6958 /* ProfileViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CA070A15229E7A02007E6958 /* ProfileViewController.xib */; };
+		CA0C9857229F6A420064C0C5 /* BaseTabContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA0C9850229F6A420064C0C5 /* BaseTabContentView.swift */; };
+		CA0C985A229F6A420064C0C5 /* AppTabContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA0C9853229F6A420064C0C5 /* AppTabContentView.swift */; };
+		CA21E57822A90736000BFF22 /* HomeTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA21E57722A90736000BFF22 /* HomeTabBarController.swift */; };
+		CA498A6522A0C60E005553B0 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA498A6322A0C60E005553B0 /* MenuViewController.swift */; };
+		CA498A6622A0C60E005553B0 /* MenuViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CA498A6422A0C60E005553B0 /* MenuViewController.xib */; };
+		CA9674B4229FCD65003F5DA4 /* AppBigTabContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA9674B3229FCD65003F5DA4 /* AppBigTabContentView.swift */; };
+		CA9674B6229FD1F6003F5DA4 /* AppNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA9674B5229FD1F6003F5DA4 /* AppNavigationController.swift */; };
+		CAE258F522A11A0000CDC36B /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAE258F422A11A0000CDC36B /* Constant.swift */; };
+		CAE258FF22A1304000CDC36B /* MenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAE258FD22A1304000CDC36B /* MenuCell.swift */; };
+		CAE2590022A1304000CDC36B /* MenuCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CAE258FE22A1304000CDC36B /* MenuCell.xib */; };
 		CAF338D3229D2599004800EA /* UIButton+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAF338D1229D2599004800EA /* UIButton+Extensions.swift */; };
 		CAF338D4229D2599004800EA /* UIColor+Extentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAF338D2229D2599004800EA /* UIColor+Extentions.swift */; };
 		CAF338D6229D3590004800EA /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAF338D5229D3590004800EA /* UIView+Extensions.swift */; };
@@ -36,6 +58,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		482E9E1A3C1A456ABA1228F3 /* Pods-CandyTodoList.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CandyTodoList.debug.xcconfig"; path = "Target Support Files/Pods-CandyTodoList/Pods-CandyTodoList.debug.xcconfig"; sourceTree = "<group>"; };
+		7043369123FE6CCB7BD5F359 /* Pods_CandyTodoList.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CandyTodoList.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA067987229CE51700B20AD5 /* CandyTodoList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CandyTodoList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA06798A229CE51700B20AD5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CA067991229CE51A00B20AD5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -57,6 +81,27 @@
 		CA0679C0229CF3BD00B20AD5 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		CA0679C1229CF3BD00B20AD5 /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
 		CA0679C5229D1BAE00B20AD5 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		CA0709F1229E281B007E6958 /* NavigationUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationUtil.swift; sourceTree = "<group>"; };
+		CA0709F4229E292C007E6958 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		CA0709F5229E292C007E6958 /* RegisterViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RegisterViewController.xib; sourceTree = "<group>"; };
+		CA070A05229E78D7007E6958 /* TodoListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoListViewController.swift; sourceTree = "<group>"; };
+		CA070A06229E78D7007E6958 /* TodoListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TodoListViewController.xib; sourceTree = "<group>"; };
+		CA070A0A229E7965007E6958 /* SchedulerListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchedulerListViewController.swift; sourceTree = "<group>"; };
+		CA070A0B229E7965007E6958 /* SchedulerListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SchedulerListViewController.xib; sourceTree = "<group>"; };
+		CA070A0F229E79C9007E6958 /* NotificationListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationListViewController.swift; sourceTree = "<group>"; };
+		CA070A10229E79C9007E6958 /* NotificationListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NotificationListViewController.xib; sourceTree = "<group>"; };
+		CA070A14229E7A02007E6958 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		CA070A15229E7A02007E6958 /* ProfileViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileViewController.xib; sourceTree = "<group>"; };
+		CA0C9850229F6A420064C0C5 /* BaseTabContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTabContentView.swift; sourceTree = "<group>"; };
+		CA0C9853229F6A420064C0C5 /* AppTabContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppTabContentView.swift; sourceTree = "<group>"; };
+		CA21E57722A90736000BFF22 /* HomeTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTabBarController.swift; sourceTree = "<group>"; };
+		CA498A6322A0C60E005553B0 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		CA498A6422A0C60E005553B0 /* MenuViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MenuViewController.xib; sourceTree = "<group>"; };
+		CA9674B3229FCD65003F5DA4 /* AppBigTabContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppBigTabContentView.swift; sourceTree = "<group>"; };
+		CA9674B5229FD1F6003F5DA4 /* AppNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppNavigationController.swift; sourceTree = "<group>"; };
+		CAE258F422A11A0000CDC36B /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		CAE258FD22A1304000CDC36B /* MenuCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuCell.swift; sourceTree = "<group>"; };
+		CAE258FE22A1304000CDC36B /* MenuCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MenuCell.xib; sourceTree = "<group>"; };
 		CAF338D1229D2599004800EA /* UIButton+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIButton+Extensions.swift"; sourceTree = "<group>"; };
 		CAF338D2229D2599004800EA /* UIColor+Extentions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Extentions.swift"; sourceTree = "<group>"; };
 		CAF338D5229D3590004800EA /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
@@ -64,6 +109,7 @@
 		CAF338DA229D3DEE004800EA /* UILabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UILabel.swift; sourceTree = "<group>"; };
 		CAF338DE229D3F08004800EA /* UITableViewController+Extentions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableViewController+Extentions.swift"; sourceTree = "<group>"; };
 		CAF338E0229D46BD004800EA /* GradientButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientButton.swift; sourceTree = "<group>"; };
+		E59CAD9D4CDABE44D444E071 /* Pods-CandyTodoList.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CandyTodoList.release.xcconfig"; path = "Target Support Files/Pods-CandyTodoList/Pods-CandyTodoList.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,17 +117,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				129A1ACE036BB5EB98E350D2 /* Pods_CandyTodoList.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		44C2C2AEA999989A10B13C31 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				482E9E1A3C1A456ABA1228F3 /* Pods-CandyTodoList.debug.xcconfig */,
+				E59CAD9D4CDABE44D444E071 /* Pods-CandyTodoList.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		CA06797E229CE51700B20AD5 = {
 			isa = PBXGroup;
 			children = (
 				CA067989229CE51700B20AD5 /* CandyTodoList */,
 				CA067988229CE51700B20AD5 /* Products */,
+				44C2C2AEA999989A10B13C31 /* Pods */,
+				D81077D77F2858AD6AAC5A0E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -96,13 +154,13 @@
 		CA067989229CE51700B20AD5 /* CandyTodoList */ = {
 			isa = PBXGroup;
 			children = (
-				CAF338D7229D3C85004800EA /* Extentions */,
-				CA0679C5229D1BAE00B20AD5 /* Colors.xcassets */,
+				CAE258F322A119E000CDC36B /* Helper */,
 				CA0679A4229CEC6000B20AD5 /* Util */,
 				CA06799F229CEA8D00B20AD5 /* Asset */,
 				CA06799D229CE59600B20AD5 /* ViewControllers */,
 				CA06799C229CE57F00B20AD5 /* AppDelegate */,
 				CA067991229CE51A00B20AD5 /* Assets.xcassets */,
+				CA0679C5229D1BAE00B20AD5 /* Colors.xcassets */,
 				CA067993229CE51A00B20AD5 /* LaunchScreen.storyboard */,
 				CA067996229CE51A00B20AD5 /* Info.plist */,
 			);
@@ -120,7 +178,8 @@
 		CA06799D229CE59600B20AD5 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				CA0679C4229CF3C100B20AD5 /* LoginViewController */,
+				CA0709F9229E2EAE007E6958 /* UI */,
+				CA0709F8229E2EA5007E6958 /* Base */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -136,6 +195,8 @@
 		CA0679A4229CEC6000B20AD5 /* Util */ = {
 			isa = PBXGroup;
 			children = (
+				CAF338D7229D3C85004800EA /* Extentions */,
+				CA0709F1229E281B007E6958 /* NavigationUtil.swift */,
 			);
 			path = Util;
 			sourceTree = "<group>";
@@ -159,13 +220,127 @@
 			path = Font;
 			sourceTree = "<group>";
 		};
-		CA0679C4229CF3C100B20AD5 /* LoginViewController */ = {
+		CA0679C4229CF3C100B20AD5 /* Login */ = {
 			isa = PBXGroup;
 			children = (
 				CA0679C0229CF3BD00B20AD5 /* LoginViewController.swift */,
 				CA0679C1229CF3BD00B20AD5 /* LoginViewController.xib */,
 			);
-			path = LoginViewController;
+			path = Login;
+			sourceTree = "<group>";
+		};
+		CA0709F3229E28FD007E6958 /* Register */ = {
+			isa = PBXGroup;
+			children = (
+				CA0709F4229E292C007E6958 /* RegisterViewController.swift */,
+				CA0709F5229E292C007E6958 /* RegisterViewController.xib */,
+			);
+			path = Register;
+			sourceTree = "<group>";
+		};
+		CA0709F8229E2EA5007E6958 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		CA0709F9229E2EAE007E6958 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				CA070A13229E79E8007E6958 /* Profile */,
+				CA070A0E229E79AD007E6958 /* NotificationList */,
+				CA070A09229E791F007E6958 /* SchedulerList */,
+				CA070A04229E78C1007E6958 /* TodoList */,
+				CA0709FA229E486D007E6958 /* Home */,
+				CA0709F3229E28FD007E6958 /* Register */,
+				CA0679C4229CF3C100B20AD5 /* Login */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		CA0709FA229E486D007E6958 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				CA498A6222A0C5F2005553B0 /* Menu */,
+				CA070A18229E88B2007E6958 /* TabContentView */,
+				CA21E57722A90736000BFF22 /* HomeTabBarController.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		CA070A04229E78C1007E6958 /* TodoList */ = {
+			isa = PBXGroup;
+			children = (
+				CA070A05229E78D7007E6958 /* TodoListViewController.swift */,
+				CA070A06229E78D7007E6958 /* TodoListViewController.xib */,
+			);
+			path = TodoList;
+			sourceTree = "<group>";
+		};
+		CA070A09229E791F007E6958 /* SchedulerList */ = {
+			isa = PBXGroup;
+			children = (
+				CA070A0A229E7965007E6958 /* SchedulerListViewController.swift */,
+				CA070A0B229E7965007E6958 /* SchedulerListViewController.xib */,
+			);
+			path = SchedulerList;
+			sourceTree = "<group>";
+		};
+		CA070A0E229E79AD007E6958 /* NotificationList */ = {
+			isa = PBXGroup;
+			children = (
+				CA070A0F229E79C9007E6958 /* NotificationListViewController.swift */,
+				CA070A10229E79C9007E6958 /* NotificationListViewController.xib */,
+			);
+			path = NotificationList;
+			sourceTree = "<group>";
+		};
+		CA070A13229E79E8007E6958 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				CA070A14229E7A02007E6958 /* ProfileViewController.swift */,
+				CA070A15229E7A02007E6958 /* ProfileViewController.xib */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		CA070A18229E88B2007E6958 /* TabContentView */ = {
+			isa = PBXGroup;
+			children = (
+				CA9674B5229FD1F6003F5DA4 /* AppNavigationController.swift */,
+				CA0C9850229F6A420064C0C5 /* BaseTabContentView.swift */,
+				CA0C9853229F6A420064C0C5 /* AppTabContentView.swift */,
+				CA9674B3229FCD65003F5DA4 /* AppBigTabContentView.swift */,
+			);
+			path = TabContentView;
+			sourceTree = "<group>";
+		};
+		CA498A6222A0C5F2005553B0 /* Menu */ = {
+			isa = PBXGroup;
+			children = (
+				CAE258F622A124E100CDC36B /* MenuCell */,
+				CA498A6322A0C60E005553B0 /* MenuViewController.swift */,
+				CA498A6422A0C60E005553B0 /* MenuViewController.xib */,
+			);
+			path = Menu;
+			sourceTree = "<group>";
+		};
+		CAE258F322A119E000CDC36B /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				CAE258F422A11A0000CDC36B /* Constant.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		CAE258F622A124E100CDC36B /* MenuCell */ = {
+			isa = PBXGroup;
+			children = (
+				CAE258FD22A1304000CDC36B /* MenuCell.swift */,
+				CAE258FE22A1304000CDC36B /* MenuCell.xib */,
+			);
+			path = MenuCell;
 			sourceTree = "<group>";
 		};
 		CAF338D7229D3C85004800EA /* Extentions */ = {
@@ -183,6 +358,14 @@
 			path = Extentions;
 			sourceTree = "<group>";
 		};
+		D81077D77F2858AD6AAC5A0E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7043369123FE6CCB7BD5F359 /* Pods_CandyTodoList.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -190,9 +373,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CA067999229CE51A00B20AD5 /* Build configuration list for PBXNativeTarget "CandyTodoList" */;
 			buildPhases = (
+				01EF1DACB94B0F249E18DC97 /* [CP] Check Pods Manifest.lock */,
 				CA067983229CE51700B20AD5 /* Sources */,
 				CA067984229CE51700B20AD5 /* Frameworks */,
 				CA067985229CE51700B20AD5 /* Resources */,
+				1E15FF31E64AD8B09CB0B234 /* [CP] Embed Pods Frameworks */,
+				CA498A6722A0D17B005553B0 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -243,6 +429,7 @@
 			files = (
 				CA0679BE229CEF2900B20AD5 /* AvenirLTStd-Book.otf in Resources */,
 				CA067995229CE51A00B20AD5 /* LaunchScreen.storyboard in Resources */,
+				CA498A6622A0C60E005553B0 /* MenuViewController.xib in Resources */,
 				CA067992229CE51A00B20AD5 /* Assets.xcassets in Resources */,
 				CA0679B6229CEF2900B20AD5 /* AvenirLTStd-Medium.otf in Resources */,
 				CA0679BF229CEF2900B20AD5 /* AvenirLTStd-Roman.otf in Resources */,
@@ -250,29 +437,125 @@
 				CA0679BD229CEF2900B20AD5 /* AvenirLTStd-MediumOblique.otf in Resources */,
 				CA0679B4229CEF2900B20AD5 /* AvenirLTStd-Oblique.otf in Resources */,
 				CA0679BC229CEF2900B20AD5 /* AvenirLTStd-Black.otf in Resources */,
+				CA070A08229E78D7007E6958 /* TodoListViewController.xib in Resources */,
 				CA0679B5229CEF2900B20AD5 /* AvenirLTStd-BookOblique.otf in Resources */,
 				CA0679B7229CEF2900B20AD5 /* AvenirLTStd-LightOblique.otf in Resources */,
 				CA0679B9229CEF2900B20AD5 /* AvenirLTStd-HeavyOblique.otf in Resources */,
 				CA0679BA229CEF2900B20AD5 /* AvenirLTStd-Light.otf in Resources */,
+				CA070A0D229E7965007E6958 /* SchedulerListViewController.xib in Resources */,
+				CA070A12229E79C9007E6958 /* NotificationListViewController.xib in Resources */,
+				CA070A17229E7A02007E6958 /* ProfileViewController.xib in Resources */,
+				CAE2590022A1304000CDC36B /* MenuCell.xib in Resources */,
 				CA0679C6229D1BAE00B20AD5 /* Colors.xcassets in Resources */,
 				CA0679BB229CEF2900B20AD5 /* AvenirLTStd-BlackOblique.otf in Resources */,
+				CA0709F7229E292C007E6958 /* RegisterViewController.xib in Resources */,
 				CA0679B8229CEF2900B20AD5 /* AvenirLTStd-Heavy.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		01EF1DACB94B0F249E18DC97 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CandyTodoList-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1E15FF31E64AD8B09CB0B234 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CandyTodoList/Pods-CandyTodoList-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/ESTabBarController-swift/ESTabBarController_swift.framework",
+				"${BUILT_PRODUCTS_DIR}/EachNavigationBar/EachNavigationBar.framework",
+				"${BUILT_PRODUCTS_DIR}/SideMenu/SideMenu.framework",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyUserDefaults/SwiftyUserDefaults.framework",
+				"${BUILT_PRODUCTS_DIR}/UIColor_Hex_Swift/UIColor_Hex_Swift.framework",
+				"${BUILT_PRODUCTS_DIR}/pop/pop.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ESTabBarController_swift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/EachNavigationBar.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SideMenu.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyUserDefaults.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/UIColor_Hex_Swift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/pop.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CandyTodoList/Pods-CandyTodoList-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CA498A6722A0D17B005553B0 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/SwiftLint/swiftlint\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		CA067983229CE51700B20AD5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CA9674B6229FD1F6003F5DA4 /* AppNavigationController.swift in Sources */,
 				CAF338DF229D3F08004800EA /* UITableViewController+Extentions.swift in Sources */,
+				CA070A11229E79C9007E6958 /* NotificationListViewController.swift in Sources */,
 				CAF338D6229D3590004800EA /* UIView+Extensions.swift in Sources */,
+				CA21E57822A90736000BFF22 /* HomeTabBarController.swift in Sources */,
+				CA9674B4229FCD65003F5DA4 /* AppBigTabContentView.swift in Sources */,
 				CA0679C2229CF3BD00B20AD5 /* LoginViewController.swift in Sources */,
+				CA0709F6229E292C007E6958 /* RegisterViewController.swift in Sources */,
 				CAF338D3229D2599004800EA /* UIButton+Extensions.swift in Sources */,
+				CA0709F2229E281B007E6958 /* NavigationUtil.swift in Sources */,
+				CA070A16229E7A02007E6958 /* ProfileViewController.swift in Sources */,
+				CAE258F522A11A0000CDC36B /* Constant.swift in Sources */,
+				CA0C9857229F6A420064C0C5 /* BaseTabContentView.swift in Sources */,
 				CA06798B229CE51700B20AD5 /* AppDelegate.swift in Sources */,
+				CA0C985A229F6A420064C0C5 /* AppTabContentView.swift in Sources */,
+				CAE258FF22A1304000CDC36B /* MenuCell.swift in Sources */,
+				CA070A0C229E7965007E6958 /* SchedulerListViewController.swift in Sources */,
 				CAF338E1229D46BD004800EA /* GradientButton.swift in Sources */,
+				CA498A6522A0C60E005553B0 /* MenuViewController.swift in Sources */,
+				CA070A07229E78D7007E6958 /* TodoListViewController.swift in Sources */,
 				CAF338D4229D2599004800EA /* UIColor+Extentions.swift in Sources */,
 				CAF338D9229D3CAE004800EA /* Date+Extentions.swift in Sources */,
 				CAF338DB229D3DEE004800EA /* UILabel.swift in Sources */,
@@ -412,6 +695,7 @@
 		};
 		CA06799A229CE51A00B20AD5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 482E9E1A3C1A456ABA1228F3 /* Pods-CandyTodoList.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -430,6 +714,7 @@
 		};
 		CA06799B229CE51A00B20AD5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E59CAD9D4CDABE44D444E071 /* Pods-CandyTodoList.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
