@@ -43,6 +43,12 @@
 		CA21E57822A90736000BFF22 /* HomeTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA21E57722A90736000BFF22 /* HomeTabBarController.swift */; };
 		CA498A6522A0C60E005553B0 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA498A6322A0C60E005553B0 /* MenuViewController.swift */; };
 		CA498A6622A0C60E005553B0 /* MenuViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CA498A6422A0C60E005553B0 /* MenuViewController.xib */; };
+		CA67852D22AA060E00AD9949 /* AppHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA67852C22AA060E00AD9949 /* AppHelper.swift */; };
+		CA67853022AA414200AD9949 /* Todo.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA67852F22AA414200AD9949 /* Todo.swift */; };
+		CA67853422AA482E00AD9949 /* TodoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA67853222AA482E00AD9949 /* TodoTableViewCell.swift */; };
+		CA67853522AA482E00AD9949 /* TodoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CA67853322AA482E00AD9949 /* TodoTableViewCell.xib */; };
+		CA67853922AA747C00AD9949 /* AddTodoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA67853722AA747C00AD9949 /* AddTodoViewController.swift */; };
+		CA67853A22AA747C00AD9949 /* AddTodoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CA67853822AA747C00AD9949 /* AddTodoViewController.xib */; };
 		CA9674B4229FCD65003F5DA4 /* AppBigTabContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA9674B3229FCD65003F5DA4 /* AppBigTabContentView.swift */; };
 		CA9674B6229FD1F6003F5DA4 /* AppNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA9674B5229FD1F6003F5DA4 /* AppNavigationController.swift */; };
 		CAE258F522A11A0000CDC36B /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAE258F422A11A0000CDC36B /* Constant.swift */; };
@@ -97,6 +103,12 @@
 		CA21E57722A90736000BFF22 /* HomeTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTabBarController.swift; sourceTree = "<group>"; };
 		CA498A6322A0C60E005553B0 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		CA498A6422A0C60E005553B0 /* MenuViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MenuViewController.xib; sourceTree = "<group>"; };
+		CA67852C22AA060E00AD9949 /* AppHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppHelper.swift; sourceTree = "<group>"; };
+		CA67852F22AA414200AD9949 /* Todo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Todo.swift; sourceTree = "<group>"; };
+		CA67853222AA482E00AD9949 /* TodoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoTableViewCell.swift; sourceTree = "<group>"; };
+		CA67853322AA482E00AD9949 /* TodoTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TodoTableViewCell.xib; sourceTree = "<group>"; };
+		CA67853722AA747C00AD9949 /* AddTodoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTodoViewController.swift; sourceTree = "<group>"; };
+		CA67853822AA747C00AD9949 /* AddTodoViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddTodoViewController.xib; sourceTree = "<group>"; };
 		CA9674B3229FCD65003F5DA4 /* AppBigTabContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppBigTabContentView.swift; sourceTree = "<group>"; };
 		CA9674B5229FD1F6003F5DA4 /* AppNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppNavigationController.swift; sourceTree = "<group>"; };
 		CAE258F422A11A0000CDC36B /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
@@ -154,6 +166,7 @@
 		CA067989229CE51700B20AD5 /* CandyTodoList */ = {
 			isa = PBXGroup;
 			children = (
+				CA67852E22AA40CD00AD9949 /* Model */,
 				CAE258F322A119E000CDC36B /* Helper */,
 				CA0679A4229CEC6000B20AD5 /* Util */,
 				CA06799F229CEA8D00B20AD5 /* Asset */,
@@ -248,6 +261,7 @@
 		CA0709F9229E2EAE007E6958 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				CA67853622AA745600AD9949 /* AddTodo */,
 				CA070A13229E79E8007E6958 /* Profile */,
 				CA070A0E229E79AD007E6958 /* NotificationList */,
 				CA070A09229E791F007E6958 /* SchedulerList */,
@@ -272,6 +286,7 @@
 		CA070A04229E78C1007E6958 /* TodoList */ = {
 			isa = PBXGroup;
 			children = (
+				CA67853122AA47F600AD9949 /* TodoCell */,
 				CA070A05229E78D7007E6958 /* TodoListViewController.swift */,
 				CA070A06229E78D7007E6958 /* TodoListViewController.xib */,
 			);
@@ -326,10 +341,37 @@
 			path = Menu;
 			sourceTree = "<group>";
 		};
+		CA67852E22AA40CD00AD9949 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CA67852F22AA414200AD9949 /* Todo.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CA67853122AA47F600AD9949 /* TodoCell */ = {
+			isa = PBXGroup;
+			children = (
+				CA67853222AA482E00AD9949 /* TodoTableViewCell.swift */,
+				CA67853322AA482E00AD9949 /* TodoTableViewCell.xib */,
+			);
+			path = TodoCell;
+			sourceTree = "<group>";
+		};
+		CA67853622AA745600AD9949 /* AddTodo */ = {
+			isa = PBXGroup;
+			children = (
+				CA67853722AA747C00AD9949 /* AddTodoViewController.swift */,
+				CA67853822AA747C00AD9949 /* AddTodoViewController.xib */,
+			);
+			path = AddTodo;
+			sourceTree = "<group>";
+		};
 		CAE258F322A119E000CDC36B /* Helper */ = {
 			isa = PBXGroup;
 			children = (
 				CAE258F422A11A0000CDC36B /* Constant.swift */,
+				CA67852C22AA060E00AD9949 /* AppHelper.swift */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -437,6 +479,7 @@
 				CA0679BD229CEF2900B20AD5 /* AvenirLTStd-MediumOblique.otf in Resources */,
 				CA0679B4229CEF2900B20AD5 /* AvenirLTStd-Oblique.otf in Resources */,
 				CA0679BC229CEF2900B20AD5 /* AvenirLTStd-Black.otf in Resources */,
+				CA67853A22AA747C00AD9949 /* AddTodoViewController.xib in Resources */,
 				CA070A08229E78D7007E6958 /* TodoListViewController.xib in Resources */,
 				CA0679B5229CEF2900B20AD5 /* AvenirLTStd-BookOblique.otf in Resources */,
 				CA0679B7229CEF2900B20AD5 /* AvenirLTStd-LightOblique.otf in Resources */,
@@ -450,6 +493,7 @@
 				CA0679BB229CEF2900B20AD5 /* AvenirLTStd-BlackOblique.otf in Resources */,
 				CA0709F7229E292C007E6958 /* RegisterViewController.xib in Resources */,
 				CA0679B8229CEF2900B20AD5 /* AvenirLTStd-Heavy.otf in Resources */,
+				CA67853522AA482E00AD9949 /* TodoTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -539,18 +583,22 @@
 				CA9674B6229FD1F6003F5DA4 /* AppNavigationController.swift in Sources */,
 				CAF338DF229D3F08004800EA /* UITableViewController+Extentions.swift in Sources */,
 				CA070A11229E79C9007E6958 /* NotificationListViewController.swift in Sources */,
+				CA67853422AA482E00AD9949 /* TodoTableViewCell.swift in Sources */,
 				CAF338D6229D3590004800EA /* UIView+Extensions.swift in Sources */,
 				CA21E57822A90736000BFF22 /* HomeTabBarController.swift in Sources */,
 				CA9674B4229FCD65003F5DA4 /* AppBigTabContentView.swift in Sources */,
 				CA0679C2229CF3BD00B20AD5 /* LoginViewController.swift in Sources */,
+				CA67853922AA747C00AD9949 /* AddTodoViewController.swift in Sources */,
 				CA0709F6229E292C007E6958 /* RegisterViewController.swift in Sources */,
 				CAF338D3229D2599004800EA /* UIButton+Extensions.swift in Sources */,
 				CA0709F2229E281B007E6958 /* NavigationUtil.swift in Sources */,
 				CA070A16229E7A02007E6958 /* ProfileViewController.swift in Sources */,
+				CA67853022AA414200AD9949 /* Todo.swift in Sources */,
 				CAE258F522A11A0000CDC36B /* Constant.swift in Sources */,
 				CA0C9857229F6A420064C0C5 /* BaseTabContentView.swift in Sources */,
 				CA06798B229CE51700B20AD5 /* AppDelegate.swift in Sources */,
 				CA0C985A229F6A420064C0C5 /* AppTabContentView.swift in Sources */,
+				CA67852D22AA060E00AD9949 /* AppHelper.swift in Sources */,
 				CAE258FF22A1304000CDC36B /* MenuCell.swift in Sources */,
 				CA070A0C229E7965007E6958 /* SchedulerListViewController.swift in Sources */,
 				CAF338E1229D46BD004800EA /* GradientButton.swift in Sources */,

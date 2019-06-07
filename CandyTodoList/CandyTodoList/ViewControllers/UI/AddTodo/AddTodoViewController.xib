@@ -10,7 +10,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="NotificationListViewController" customModule="CandyTodoList" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AddTodoViewController" customModule="CandyTodoList" customModuleProvider="target">
             <connections>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -20,22 +20,17 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OPa-mM-K8V">
-                    <rect key="frame" x="157.5" y="441" width="99" height="14"/>
-                    <attributedString key="attributedText">
-                        <fragment content="Notification List">
-                            <attributes>
-                                <font key="NSFont" size="14" name="AvenirLTStd-Roman"/>
-                            </attributes>
-                        </fragment>
-                    </attributedString>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add Todo" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ssc-Fm-30d">
+                    <rect key="frame" x="170.5" y="437.5" width="73.5" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
-                <constraint firstItem="OPa-mM-K8V" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="Sss-GI-b18"/>
-                <constraint firstItem="OPa-mM-K8V" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="glL-p4-7q1"/>
+                <constraint firstItem="ssc-Fm-30d" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="4RU-IC-sGq"/>
+                <constraint firstItem="ssc-Fm-30d" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="ZgO-jj-FdF"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
         </view>

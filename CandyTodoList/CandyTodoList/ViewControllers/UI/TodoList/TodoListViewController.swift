@@ -10,6 +10,16 @@ import UIKit
 import EachNavigationBar
 
 class TodoListViewController: UIViewController {
+    
+    @IBOutlet weak var todoTableView: UITableView!
+    
+    let todoList: [Todo] = [
+        Todo(checked: false, text: "Nghia"),
+        Todo(checked: false, text: "Nghia"),
+        Todo(checked: false, text: "Nghia"),
+        Todo(checked: false, text: "Nghia"),
+        Todo(checked: false, text: "Nghia")
+    ]
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,20 +31,29 @@ class TodoListViewController: UIViewController {
 
 extension TodoListViewController {
     func initView() {
-        //self.navigationController?.setNavigationBarHidden(true, animated: true)
-        initNavigationBar()
+        AppHelper.configHomeNavigationBar(viewController: self, title: "TO-DO")
+        initTableView()
     }
     
-    func initNavigationBar() {
-//        let nav = UINavigationController(rootViewController: self)
-//        nav.navigation.configuration.isEnabled = true
-//
-//        nav.navigation.configuration.titleTextAttributes = [.foregroundColor: UIColor.blue]
-//
-//        nav.navigation.configuration.barTintColor = UIColor.red
+    func initTableView() {
+        let cell = UINib(nibName: "TodoTableViewCell", bundle: nil)
+        todoTableView.register(cell, forCellReuseIdentifier: "cell")
+        todoTableView.dataSource = self
+        todoTableView.delegate = self
+    }
+}
+
+extension TodoListViewController: UITableViewDataSource, UITableViewDelegate {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return todoList.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let todoCell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as? TodoTableViewCell
         
-        //nav.navigation.configuration.shadowImage = UIImage(named: "shadow")
+        let todo = todoList[indexPath.item]
+        todoCell?.todoLabel?.text = todo.text
         
-        //nav.navigation.configuration.setBackgroundImage(UIImage(named: "nav"), for: .any, barMetrics: .default)
+        return todoCell!
     }
 }

@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import EachNavigationBar
+import SideMenu
 
 class ProfileViewController: UIViewController {
 
@@ -17,6 +19,6 @@ class ProfileViewController: UIViewController {
     }
 
     func initView() {
-        //self.navigationController?.setNavigationBarHidden(true, animated: true)
+        AppHelper.configHomeNavigationBar(viewController: self, title: "PROFILE")
     }
 }

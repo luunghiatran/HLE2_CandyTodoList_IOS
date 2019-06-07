@@ -17,6 +17,6 @@ class NotificationListViewController: UIViewController {
     }
 
     func initView() {
-        //self.navigationController?.setNavigationBarHidden(true, animated: true)
+        AppHelper.configHomeNavigationBar(viewController: self, title: "NOTIFICATIONS")
     }
 }
