@@ -15,10 +15,10 @@ class ProfileViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        initView()
+        setupView()
     }
 
-    func initView() {
+    func setupView() {
         AppHelper.configHomeNavigationBar(viewController: self, title: "PROFILE")
     }
 }

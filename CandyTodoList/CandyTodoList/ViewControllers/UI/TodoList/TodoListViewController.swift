@@ -24,18 +24,18 @@ class TodoListViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        initView()
+        setupView()
     }
 
 }
 
 extension TodoListViewController {
-    func initView() {
+    func setupView() {
         AppHelper.configHomeNavigationBar(viewController: self, title: "TO-DO")
-        initTableView()
+        setupTableView()
     }
     
-    func initTableView() {
+    func setupTableView() {
         let cell = UINib(nibName: "TodoTableViewCell", bundle: nil)
         todoTableView.register(cell, forCellReuseIdentifier: "cell")
         todoTableView.dataSource = self

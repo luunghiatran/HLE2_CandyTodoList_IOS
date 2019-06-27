@@ -21,10 +21,10 @@ class LoginViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        initView()
+        setupView()
     }
     
-    func initView() {
+    func setupView() {
         self.navigationController?.setNavigationBarHidden(true, animated: true)
     }
 }

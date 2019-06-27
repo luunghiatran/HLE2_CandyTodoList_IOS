@@ -12,6 +12,22 @@ import SideMenu
 
 class AppHelper {
     
+    class func initNavigationBar(_ viewController: UIViewController) -> UINavigationController {
+        let nav = UINavigationController(rootViewController: viewController)
+        nav.navigation.configuration.isEnabled = true // Enable Each Navigation
+        
+        // Background
+        nav.navigation.configuration.barTintColor = UIColor(named: "AppPink")
+        // Title
+        let textColor = UIColor(named: "AppBlue") ?? UIColor.gray
+        nav.navigation.configuration.titleTextAttributes = [
+            .foregroundColor: textColor,
+            .font: UIFont(name: "AvenirLTStd-Roman", size: 14)!
+        ]
+        
+        return nav
+    }
+    
     class func configHomeNavigationBar(viewController: UIViewController, title: String) {
         let navigation = viewController.navigation
         

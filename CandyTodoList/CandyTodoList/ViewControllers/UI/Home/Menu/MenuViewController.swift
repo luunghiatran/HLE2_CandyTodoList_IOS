@@ -27,20 +27,20 @@ class MenuViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        initView()
+        setupView()
     }
 }
 
 // MARK: === Static Func ===
 extension MenuViewController {
     
-    func initView() {
+    func setupView() {
         self.navigationController?.setNavigationBarHidden(true, animated: true)
-        initAvatar()
-        initMenuList()
+        setupAvatar()
+        setupMenuList()
     }
     
-    func initAvatar() {
+    func setupAvatar() {
         // corner avatar
         avatarImageView.layer.cornerRadius = 17
         avatarImageView.clipsToBounds = true
@@ -49,7 +49,7 @@ extension MenuViewController {
         avatarImageView.layer.borderWidth = 1
     }
     
-    func initMenuList() {
+    func setupMenuList() {
         let menuCell = UINib(nibName: "MenuCell", bundle: nil)
         menuTableView.register(menuCell, forCellReuseIdentifier: "menu_cell")
         menuTableView.delegate = self

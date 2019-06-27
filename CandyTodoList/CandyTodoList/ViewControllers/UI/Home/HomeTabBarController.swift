@@ -15,7 +15,7 @@ class HomeTabBarController: ESTabBarController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        initTab()
+        setupTab()
         initSideMenu(self)
     }
 }
@@ -28,10 +28,12 @@ extension HomeTabBarController {
 // MARK: === Private ===
 extension HomeTabBarController {
     
-    private func initTab() {
+    private func setupTab() {
         let bgColor = UIColor(named: "AppPink")
         self.tabBar.backgroundColor = bgColor
         self.tabBar.barTintColor = bgColor
+        
+        // Add Touch
         self.shouldHijackHandler = {
             tabbarController, viewController, index in
             if index == 2 {
@@ -44,7 +46,7 @@ extension HomeTabBarController {
             DispatchQueue.main.asyncAfter(deadline: .now() + 0.2) {
                 // open add todo
                 let addTodoVC = AddTodoViewController(nibName: "AddTodoViewController", bundle: nil)
-                let nav = UINavigationController(rootViewController: addTodoVC)
+                let nav = AppHelper.initNavigationBar(addTodoVC)
                 self.present(nav, animated: true, completion: nil)
             }
         }
@@ -92,31 +94,15 @@ extension HomeTabBarController {
         )
         
         /// Config NavigationBar
-        let nav1 = initNavigationController(tab1, title: "TO-DO")
-        let nav2 = initNavigationController(tab2, title: "SCHEDULER")
-        let nav3 = initNavigationController(tab3, title: "")
-        let nav4 = initNavigationController(tab4, title: "NOTIFICATIONS")
-        let nav5 = initNavigationController(tab5, title: "PROFILE")
+        let nav1 = AppHelper.initNavigationBar(tab1)
+        let nav2 = AppHelper.initNavigationBar(tab2)
+        let nav3 = AppHelper.initNavigationBar(tab3)
+        let nav4 = AppHelper.initNavigationBar(tab4)
+        let nav5 = AppHelper.initNavigationBar(tab5)
         
         //let controllers = [tab1, tab2, tab3, tab4, tab5]
         let controllers = [nav1, nav2, nav3, nav4, nav5]
         self.viewControllers = controllers
-    }
-    
-    private func initNavigationController(_ viewController: UIViewController, title: String) -> UINavigationController {
-        let nav = UINavigationController(rootViewController: viewController)
-        nav.navigation.configuration.isEnabled = true // Enable Each Navigation
-        
-        // Background
-        nav.navigation.configuration.barTintColor = UIColor(named: "AppPink")
-        // Title
-        let textColor = UIColor(named: "AppBlue") ?? UIColor.gray
-        nav.navigation.configuration.titleTextAttributes = [
-            .foregroundColor: textColor,
-            .font: UIFont(name: "AvenirLTStd-Roman", size: 14)!
-        ]
-        
-        return nav
     }
     
     func initSideMenu(_ viewController: UIViewController) {
